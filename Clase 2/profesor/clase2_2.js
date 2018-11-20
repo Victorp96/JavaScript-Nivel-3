@@ -2,18 +2,17 @@
 $(document).ready(
     function(){
         console.log("se cargo la pagina")
-        document.body.style.background="red";
+        document.body.style.background="yellow"
     }
 )
-//Cuando haga click en cualquier h2, se ejecuta esa funcion con un alert mostrando el contenido del h2
 $("h2").click(function(){
     alert(this.innerHTML)
 })
 $("#subtitulo").click(function(){
-   $("ol").hide();
+    $("ol").hide();
 })
 $("div h2").click(function(){
-    console.log("hola Victor")
+    console.log("hola kevin")
 })
 $("#esconder").click( function (){
     //let x = $("ol");
@@ -29,6 +28,7 @@ $("#agregar").click(function(){
     let dato = prompt("Introduzca un texto:");
     $("ol").append("<li>"+dato+"</li>");
 })
+
 $("h1").click(function(){
     if ($("h1").height()>=150)
         $("h1").height(30);
